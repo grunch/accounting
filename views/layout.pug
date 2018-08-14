@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title= title
+    link(href="/favicon.ico", rel="Shortcut Icon", type="image/x-icon")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-local-primary.mb-4
+      a.navbar-brand(href="/")
+        span.badge.badge-info.ml-2 Accounting app
+    block content
+    footer.site-footer
+      p.ml-5.mt-2 Developed by Francisco Calderón
+  block scripts
+    script(src="/js/jquery-3.3.1.min.js")
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/main.js")
